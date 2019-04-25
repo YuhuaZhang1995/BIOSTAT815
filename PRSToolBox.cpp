@@ -221,8 +221,3 @@ arma::mat cal_PRS(const char* geno_file, const char* weight_file,int thread_pool
 	//Rcout<<tmp_result<<std::endl;
 	return tmp_result;
 }
-
-tic <- proc.time()
-cal_PRS("test.txt","weight2.txt",4,4)
-toc <- proc.time()
-print(toc-tic)
